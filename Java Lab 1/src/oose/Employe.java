@@ -1,4 +1,4 @@
-package fr.polymontp.serafin.entreprise;
+package oose;
 
 public abstract class Employe {
 
@@ -17,4 +17,9 @@ public abstract class Employe {
 	}
 
 	abstract public float getSalaire();
+
+	public float getChiffreA() {
+		
+		return 0;
+	}
 }

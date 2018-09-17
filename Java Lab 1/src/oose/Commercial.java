@@ -1,4 +1,4 @@
-package fr.polymontp.serafin.entreprise;
+package oose;
 
 public class Commercial extends Employe {
 

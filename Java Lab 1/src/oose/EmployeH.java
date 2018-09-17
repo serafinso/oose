@@ -1,4 +1,4 @@
-package fr.polymontp.serafin.entreprise;
+package oose;
 
 public class EmployeH extends Employe {
 

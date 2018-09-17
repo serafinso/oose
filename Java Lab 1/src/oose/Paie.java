@@ -1,4 +1,4 @@
-package fr.polymontp.serafin.entreprise;
+package oose;
 
 public class Paie {
 
@@ -7,7 +7,7 @@ public class Paie {
 		Commercial c2 = new Commercial("M", 1000, 5000);
 		Commercial c3 = new Commercial("John", 1000, 5000);
 		Commercial c4 = new Commercial("D");
-		c4.setInfosSalaire(100000, 8000);
+		c4.setInfosSalaire(2000, 8000);
 
 		EmployeH e1 = new EmployeH("A", 40, 8, 0.5f);
 		EmployeH e2 = new EmployeH("B", 40, 8, 0.3f);
@@ -23,11 +23,13 @@ public class Paie {
 		Directeur d = Directeur.createDirecteur("Dédé", 40);
 		Directeur d1 = Directeur.createDirecteur("Arthur", 30); 
 		
+		//TEST DIRECTEUR SINGLETON
 		System.out.println( d.getNameE());
 		System.out.println( d.getSalaireFixe());
 		System.out.println( d1.getNameE());
 		System.out.println( d1.getSalaireFixe());
 		
+		//CALCUL SALAIRE DIRECTEUR
 		float salaireD=0;
 		salaireD = d.getSalaireFixe();
 		float totalCA = 0;
@@ -36,7 +38,12 @@ public class Paie {
 				totalCA += employes[i].getChiffreA();
 			}
 		}
-
-		System.out.println(salaireD);
+		salaireD += totalCA;
+		System.out.println("Le salaire du directeur est de " + salaireD + " euros.");
+		
+		Entreprise E1 = new Entreprise(10, 2);
+		//try {
+		//		}
+		
 	}
 }

@@ -1,6 +1,4 @@
-package fr.polymontp.serafin.entreprise;
-
-
+package oose;
 
 public class Directeur extends Employe{
 	
